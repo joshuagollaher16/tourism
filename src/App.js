@@ -8,8 +8,6 @@ import LocationMarker from "./components/LocationMarker";
 import Navbar from "./components/Navbar";
 
 
-
-
 class App extends Component {
 
     constructor(props) {

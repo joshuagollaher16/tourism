@@ -17,11 +17,11 @@ export default function Navbar() {
             exclusive
             onChange={handleChange}
         >
-            <ToggleButton value="rating">Rating</ToggleButton>
-            <ToggleButton value="nearme">Near Me</ToggleButton>
-            <ToggleButton value="price">Price</ToggleButton>
-            <ToggleButton value="seasonal">Seasonal</ToggleButton>
-            <ToggleButton value="type">Type</ToggleButton>
+            <ToggleButton className="full-height" value="rating">Rating</ToggleButton>
+            <ToggleButton className="full-height" value="nearme">Near Me</ToggleButton>
+            <ToggleButton className="full-height" value="price">Price</ToggleButton>
+            <ToggleButton className="full-height" value="seasonal">Seasonal</ToggleButton>
+            <ToggleButton className="full-height" value="type">Type</ToggleButton>
         </ToggleButtonGroup>
     );
 }
