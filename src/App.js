@@ -7,6 +7,8 @@ import * as d3 from "d3"
 import LocationMarker from "./components/LocationMarker";
 import Navbar from "./components/Navbar";
 
+import filter from "./Filter/Filter"
+
 
 const App = () => {
 
@@ -20,6 +22,9 @@ const App = () => {
             setState({...state, data: data});
         });
     }, []);
+
+
+
 
     return (
         <div>
@@ -39,6 +44,9 @@ const App = () => {
 
                 {state.data.map(function (d) {
                     console.log(d);
+
+
+
                     return (
                         <Marker key={d.name + d.latitude} position={[d.latitude, d.longitude]}>
                             <Popup>
